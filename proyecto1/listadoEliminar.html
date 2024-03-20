@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Solutions</title>
+    <link rel="stylesheet" href="static/css/estilos2.css">
+    <script src="https://kit.fontawesome.com/51a3879bcb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="static/img/logo.png" sizes="64x64">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header id="idheader"> </header>
+    <main id="eliminar">
+        <h1>Baja de Suscriptores</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th align="right">Mail</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="suscriptor in suscriptores">
+                    <td>{{ suscriptor.dni }}</td>
+                    <td>{{ suscriptor.nombre }}</td>
+                    <td>{{ suscriptor.apellido }}</td>
+                    <td align="right">{{ suscriptor.mail }}</td>
+                    <td><button @click="eliminarSuscriptor(suscriptor.dni)">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+  
+        <div class="contenedor-centrado"> <a href="menu.html">Menu principal</a> </div>
+    </main>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+    <script src="static/js/listadoEliminar.js"></script>
+
+    <footer id="idfooter"> </footer>
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>

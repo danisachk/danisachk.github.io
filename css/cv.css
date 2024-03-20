@@ -1,0 +1,160 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* PALETA DE COLORES */
+:root {
+    --color1: #9DB6BD;
+    --color2: #E4E7E8;
+    --color3: #F1F0F0;
+    --negro: #000000;
+    --texto: #484848;
+    --gris-oscuro: #333;
+    --gris-sombra: #808080;
+    --gris-claro: #DEE4E4;
+    --blanco: #ffffff;
+
+    --naranja3: #F27F3D;
+    --naranja2: #F2913D;
+    --naranja: #E68900;
+    --rojo: #F25E3D;
+    --rosado: #D96A88;
+
+    --fuente1: 'Bodoni Moda', serif;
+    --fuente2: 'Lato', sans-serif;
+}
+
+.body {
+    background-color: var(--color3);
+    padding: 0%;
+    width: 210mm; /* Ancho de un papel A4 */
+    height: 297mm; /* Altura de un papel A4 */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+.header {
+    background-color: var(--color1);
+    padding: 0%;
+    margin: 0 !important;
+    height: 15%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 210mm;
+    z-index: 2;
+}
+.main {
+    padding: 0%;
+    margin: 0%;
+    height: 83.5%;
+    width: 210mm;
+
+}
+
+.side-div, .side {
+    padding: 0.6rem 0.4rem 0.6rem 0.6rem;
+}
+.principal-div, .principal {
+    background-color: var(--color2);
+    padding: 0.6rem;
+    /* height: auto; */
+}
+h1, h3, h5 {
+    font-family: var(--fuente1);
+}
+h2, h4, p {
+    font-family: var(--fuente2);
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+h1 {
+    color: var(--color3);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+h2 {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+h3 {
+    /* color: var(--rosado) !important; */
+    color: var(--color1) !important;
+    font-size: 1rem;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    /* -webkit-text-stroke: 0.2px var(--color1); */
+    -webkit-text-stroke: 0.2px var(--gris-oscuro);
+    font-weight: 650;
+}
+h2, h4, h5, p, span {
+    color: var(--texto);
+}
+h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin: 0;
+}
+h5 {
+    font-style: oblique;
+    font-size: 0.75rem;
+    margin: 0;
+}
+p {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+}
+li {
+    font-size: 0.65rem;
+}
+#info, #idioma {
+    list-style-type: none;
+}
+.info {
+    text-decoration: underline;
+}
+.info2 {
+    font-weight: bold;
+}
+.titulo {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.imagen {
+    padding: 0.7rem; 
+    margin: auto;   
+    width: 10.5rem;
+    z-index: 3;
+}
+.conoc {
+    font-weight: bold;
+}
+#idioma {
+    line-height: 1.2;
+}
+.idioma {
+    font-style: italic;
+}
+#conocimientos {
+    line-height: 0.85rem;
+}
+.sobre.mi {
+    line-height: 1;
+}
+@media screen and (max-width: 768px) {
+    /* Modificar el tamaño del contenedor para dispositivos más pequeños */
+    .body {
+        width: 90vw; /* El contenedor ocupará el 90% del ancho de la ventana */
+        /* height: auto;  */
+    }
+}
+
+.encurso {
+    font-weight: bold;
+    font-style: italic;
+}

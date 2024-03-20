@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <!-- <meta name="author" content="Danisa Achkar">
+    <meta name="description" content="CV fullstack web dev Danisa Achkar">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Vue, Python, MySQL"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Danisa Achkar</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/cv.svg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Toggle-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- JavaScript -->
+    
+    <!-- PDF.js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Iconos footer -->
+    <script src="https://kit.fontawesome.com/51a3879bcb.js" crossorigin="anonymous"></script>
+    <!------ TIMELINE ---------->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
+
+    <!------ Botón Ir arriba ---------->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <img src="img/header3.jpg" alt="Computadora" class="fondo-img">
+            <div class="barra-nav">
+                <nav id="navbar" class="navbar navbar-expand-sm navbar-light opacity-75 fixed-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-toggler">
+                            <ul class="navbar-nav d-flex justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre-mi">&lt;Sobre mi&gt;</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experiencia">Experiencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="switch">
+                                <label class="language-switcher"><input id="languageCheckbox" type="checkbox"><span class="slider round"></span><span class="select-es">ES</span><span class="select-en">EN</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="presentacion">
+                <div class="presentacion1 flex-column align-items-center justify-content-center text-white">
+                    <div id="code-container">
+                        <div><h1 id="code"></h1></div><div><h2 id="code2"></h2></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Navbar -->
+        <nav id="scrollNavbar" class="scroll-navbar navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">&lt;Sobre mi&gt;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="switch">
+                        <label class="language-switcher opacity-75"><input id="languageCheckbox2" type="checkbox"><span class="slider round"></span><span class="select-es">ES</span><span class="select-en">EN</span></label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+
+        <!-- SECCIÓN SOBRE MI -->
+        <section id="sobre-mi">
+            <div class="sobre-mi container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="contenedor">
+                    <img class="foto rounded-circle shadow p-3 bg-body-tertiary rounded img-fluid" src="img/foto1.jpg" alt="Foto de perfil">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Sobre mí</h1>
+                    <p>Actualmente, me encuentro en la etapa final de mis estudios universitarios en Ingeniería Industrial en la <a href="https://www.frsf.utn.edu.ar/" target="_blank">UTN Santa Fe</a>, con solo tres asignaturas pendientes (93% aprobado) y un proyecto final para graduarme. Mi formación incluye la gestión de recursos y la optimización de procesos para mejorar la eficiencia y productividad en diversos sectores industriales, así como también la implementación de la mejora continua en la gestión de calidad. <br><br>En lo que respecta al área tecnológica, realicé varios cursos a lo largo de los años, dentro de los cuales se destacan el de Análisis de datos en Python impartido por el <a href="https://ieeeitba.web.app/" target="_blank">IEEE-ITBA</a> y el de FullStack Python Developer con el cual adquirí mis habilidades en desarrollo Front-End y Back-End emitido por la <a href="https://agenciadeaprendizaje.bue.edu.ar/">Agencia de Aprendizaje</a> de la Ciudad de Buenos Aires, en su programa <a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="_blank">Codo a Codo</a> y dentro del cual me encuentro realizando un curso de Diseño UX-UI. <br><br>Mi objetivo es aplicar las habilidades y conocimientos adquiridos tanto en el campo de la ingeniería como en el de la tecnología para contribuir al desarrollo de soluciones innovadoras en el rubro IT. Mi deseo es tener  la oportunidad de trabajar y explorar el potencial del uso de la tecnología Blockchain y de la Inteligencia Artificial (IA). Espero poder aprender y crecer junto a equipos talentosos en el futuro!</p>
+                    <a href="cv.html" target="_blank"><button class="boton btn shadow mb-2">Ver CV en formato A4</button></a>
+                    <a href="pdf.html" target="_blank" class="mb-3">Descargar PDF</a>
+                    <!-- <button id="translateButton">Traducir a Inglés</button> -->
+                    <!-- <input type="checkbox" checked data-toggle="toggle" data-on="Español" data-off="English" data-onstyle="danger" data-offstyle="primary"> -->
+                    <!-- <input type="checkbox" checked data-toggle="toggle" data-on="Español" data-off="English" data-onstyle="custom" data-offstyle="custom" class="custom-toggle" id="languageSwitch"> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CORTE -->
+        <section id="corte">
+            <div class="corte container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <p>"La programación no es solo una habilidad técnica, sino una forma de pensar y resolver problemas."</p>
+                </div>
+            </div>
+        </section>
+        <div class="piquito"></div>
+
+        <!-- SECCIÓN EXPERIENCIA -->
+        <section id="experiencia">
+            <div class="experiencia container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Experiencia laboral</h1>
+                    <!-- <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2> -->
+                </div>
+            <div class="experience pt-100 pb-100" id="experience">
+                <div class="container-fluid exper">
+                    <div class="row">
+                        <div class="exper2 col-xl-12">
+                            <ul class="timeline-list">
+                                <!-- <li class="items">
+                                    <div class="timeline-label">
+                                        <div><span>2021-</span></div>
+                                    </div>
+                                    <div class="timeline_content">
+                                        <span>Blabllablaaaa</span>
+                                        <h4>Lo que estoy haciendo ahora</h4>
+                                        <p>We gather your business and products information. We then determine the direction of the project and understand your goals and we combine your ideas with ours for an amazing website.</p>
+                                    </div>
+                                </li> -->
+                                <li class="items">
+                                    <div class="timeline-label">
+                                        <div><span>2020-2021</span></div>
+                                    </div>
+                                    <div class="timeline_content">
+                                        <span><a href="https://www.diveria.com/" target="_blank"><img id="diveria" src="img/diveria_logo.png" alt="Diveria"></a> Diveria S.R.L.</span>
+                                        <h4>QA Analyst / Tester</h4>
+                                        <p>Participación en esfuerzos de garantía de calidad y certificación para aplicaciones backend en la industria de pagos electrónicos como personal de <a href="https://www.jackhenry.com/" target="_blank">Jack Henry & Associates.</a></p>
+                                        <ul>
+                                            <li>- Brindar soporte en testing funcional y de regresión para mejoras de productos. Identificación de no conformidades y defectos contra las especificaciones y su seguimiento hasta resolución.</li>
+                                            <li>- Revisión y proporción de retroalimentación sobre los requisitos, el diseño y los documentos de alcance.</li>
+                                            <li>- Participación y soporte en sesiones de certificación end-to-end para el cumplimiento de mandatos (cambios bianuales requeridos por las Networks) con redes nacionales y regionales de EE.UU.</li>
+                                            <li>- Contribución en Mejoras Continuas de Procesos (CPI) como el desarrollo de una herramienta para optimizar los esfuerzos de pruebas de regresión, documentación de procedimientos internos y funcionalidades de herramientas.</li>
+                                            <li>- Aprendizaje constante e investigación sobre el procesamiento de transacciones EFT e interacción con expertos en la materia para identificar y refinar los requisitos de prueba.</li>
+                                        </ul>
+                                        <p><span class="referencia">Referencia:</span> Teléfono +1 (646) 970-6875, e-mail info@diveria.com</p>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <div class="timeline-label">
+                                        <div><span>2019</span></div>
+                                    </div>
+                                    <div class="timeline_content">
+                                        <span>Grupo de Estudios sobre Energía (<span><a href="https://www.frsf.utn.edu.ar/gese" target="_blank"><img id="gese" src="img/gese-logo.png" alt="GESE"></a></span>) - UTN FRSF</span>
+                                        <h4>Pasante de Ingeniería</h4>
+                                        <p>Participación en trabajo de investigación.</p>
+                                        <ul>
+                                            <li>- Estudio e investigación de estándares y procedimientos relacionados con la Eficiencia Energética y su uso o implementación en la industria.</li>
+                                            <li>- Desarrollo de herramienta en Excel para la determinación de Indicadores de Desempeño Energético y Líneas de Base Energética en el marco del Proyecto de Desarrollo Sostenible y Eficiencia Energética, bajo los lineamientos de la norma ISO 50.001, para la implementación de Sistemas de Gestión Energética. <a href="https://www.academia.edu/76850544/Desarrollo_de_herramienta_para_la_determinaci%C3%B3n_de_indicadores_de_desempe%C3%B1o_energ%C3%A9tico_en_el_marco_de_la_norma_ISO_50_001" target="_blank">Ver artículo.</a></li>
+                                        </ul>
+                                        <p><span class="referencia">Referencia:</span> Teléfono +54 342 4601579 int 4400, e-mail gese@frsf.utn.edu.ar</p>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <div class="timeline-label">
+                                        <div><span>2011-2018</span></div>
+                                    </div>
+                                    <div class="timeline_content flia1">
+                                        <span>Empresa familiar</span>
+                                        <h4>Auxiliar Administrativo y Contable</h4>
+                                        <p>Empresa familiar dedicada a Representaciones Comerciales de venta mayorista, enfocada principalmente en los rubros de Rodados para bebés y Aparatos de gimnasio para el hogar.</p>
+                                        <ul>
+                                            <li>- Gestión y control de costos y presupuestos, liquidación de impuestos y salarios, facturación, actualización de stock.</li>
+                                            <li>- Análisis de ventas, estudios de mercado, previsión de demanda.</li>
+                                            <li>- Uso de sistema B2B.</li>
+                                            <li>- Intermediación en la relación Cliente-Proveedor.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="piquito"></div> -->
+
+        <!-- SECCIÓN DE CORTE2 -->
+        <!-- <section id="corte2">
+            <div class="corte2 container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum laboriosam quae atque eius modi laudantium accusamus, odit culpa repellendus? Adipisci quod soluta quia beatae odit maiores, expedita doloribus totam.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="habilidades">
+            <div class="habilidades container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="habil">Habilidades y conocimientos</h1>
+                    <p>Detalle de herramientas utilizadas, lenguajes aprendidos y recursos aplicados.</p>
+                    <br>
+                    <h2 class="mb-0 pb-0">Ingeniería de Procesos y Diseño</h2>
+                    <p>Modelado de Procesos: <a href="https://www.bizagi.com/es" target="_blank">Bizagi</a>  |  Simulación de procesos productivos: <a href="https://www.simio-simulacion.es/" target="_blank">SIMIO</a>  |  CAD: <a href="https://web.autocad.com/login" target="_blank">AutoCAD</a>  |  Modelado de optimización: <a href="https://www.lindo.com/" target="_blank">LINDO/LINGO</a></p>
+                    <h2 class="mb-0 pb-0">Testing - Servicios de Transacciones Financieras</h2>
+                    <p>Protocolo ISO 8583: Financial transaction card originated messages  |  Connex IBM  <br>  Simuladores de transacciones EFT (Transferencia Electronica de Fondos)  |  Azure DevOps</p>
+                    <h2 class="mb-0 pb-0">Eficiencia y Gestión Energética</h2>
+                    <p>Protocolo ISO 50001: Sistemas de Gestión de la Energía  |  Protocolo ISO 50006: Evaluación del Desempeño Energético</p>
+                </div>
+                <h2>Dessarrollo de Aplicaciones Web</h2>
+                <div class="carousel-container shadow">
+                    <div class="carousel">
+                        <div class="slide"><img src="img/html.png" alt="HTML5"></div>
+                        <div class="slide"><img src="img/css.png" alt="CSS3"></div>
+                        <div class="slide"><img src="img/js.png" alt="JavaScript"></div>
+                        <div class="slide"><img src="img/boot.png" alt="Bootstrap"></div>
+                        <div class="slide"><img src="img/vue.png" alt="Vue.js"></div>
+                        <div class="slide"><img src="img/mysql.png" alt="MySQL"></div>
+                        <div class="slide"><img src="img/py.png" alt="Python"></div>
+                        <div class="slide"><img src="img/dj.png" alt="Django"></div>
+                        <div class="slide"><img src="img/flask.png" alt="Flask"></div>
+                        <div class="slide"><img src="img/git.png" alt="Git"></div>
+                        <div class="slide"><img src="img/wp.png" alt="WordPress"></div>
+                        <div class="slide"><img src="img/figma.png" alt="Figma"></div>
+
+                        <div class="slide"><img src="img/html.png" alt="HTML5"></div>
+                        <div class="slide"><img src="img/css.png" alt="CSS3"></div>
+                        <div class="slide"><img src="img/js.png" alt="JavaScript"></div>
+                        <div class="slide"><img src="img/boot.png" alt="Bootstrap"></div>
+                    </div>
+                </div> 
+                <br><br>
+                <h2>Diseño UX-UI</h2>
+                <div class="carousel3-container shadow">
+                    <div class="carousel3">
+                        <div class="slide3"><img src="img/figma.png" alt="Figma"></div>
+                        <div class="slide3"><img src="img/ai.png" alt="Adobe Illustrator"></div>
+                        <div class="slide3"><img src="img/ps.png" alt="Adobe Photoshop"></div>
+                        <div class="slide3"><img src="img/and.png" alt="Android"></div>
+                        <div class="slide3"><img src="img/w.png" alt="Whimsical"></div>
+                        <div class="slide3"><img src="img/ow.png" alt="Optimal Workshop"></div>
+                    
+                        <div class="slide3"><img src="img/figma.png" alt="Figma"></div>
+                        <div class="slide3"><img src="img/ai.png" alt="Adobe Illustrator"></div>
+                        <div class="slide3"><img src="img/ps.png" alt="Adobe Photoshop"></div>
+                        <div class="slide3"><img src="img/and.png" alt="Android"></div>
+                    </div>
+                </div>  
+                <br><br>
+                <h2>Procesamiento, Análisis y Visualización de Datos</h2>
+                <div class="carousel2-container shadow">
+                    <div class="carousel2">
+                        <div class="slide2"><img src="img/ex.png" alt="Excel"></div>
+                        <div class="slide2"><img src="img/py.png" alt="Python"></div>
+                        <div class="slide2"><img src="img/numpy.png" alt="NumPy"></div>
+                        <div class="slide2"><img src="img/pandas.png" alt="Pandas"></div>
+                        <div class="slide2"><img src="img/mat1.png" alt="MatPlotLib"></div>
+                        <div class="slide2"><img src="img/sea.png" alt="Seaborn"></div>
+                        
+                        <div class="slide2"><img src="img/ex.png" alt="Excel"></div>
+                        <div class="slide2"><img src="img/py.png" alt="Python"></div>
+                        <div class="slide2"><img src="img/numpy.png" alt="NumPy"></div>
+                        <div class="slide2"><img src="img/pandas.png" alt="Pandas"></div>
+                    </div>
+                </div>  
+                    <br>
+                    <h2 class="mb-0 pb-0">Idiomas</h2>
+                    <p>Inglés intermedio alto (B2+)  |  Español nativo</p>
+            </div>
+        </section>
+        <!-- <div class="piquito"></div> -->
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos">
+            <div class="proyectos container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Proyectos</h1>
+                    <!-- <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2> -->
+                    <p>Proyectos realizados en tecnología y programación.</p>
+                </div>
+                <div class="container">                
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="https://colab.research.google.com/drive/1ThSDwzt-U4thcP2OFTI3BnuyxAsQ4RA7" target="_blank"><img class="card-img-top" src="img/covid.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="https://colab.research.google.com/drive/1fh3IpsW_gGI3GaGfOeEnmxw8MrvaijOt?usp=sharing" target="_blank">Graficador de casos de COVID-19</a>
+                                    </h4>
+                                    <p class="card-text">Procesamiento de datos con Python: Analisis y visualización de datos sobre los casos de coronavirus en distintos paises. El objetivo de este trabajo es obtener datos de casos y muertes por el Coronavirus de un repositorio de datos online y graficar por país.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="proyecto1/index.html" target="_blank"><img class="card-img-top" src="img/front.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="proyecto1/index.html" target="_blank">Aplicación web</a>
+                                    </h4>
+                                    <p class="card-text">Creación de aplicación web para empresa ficticia de consultoría sustentable: - Desarrollo FrontEnd de interfaz de usuario responsive. <br>- Desarrollo BackEnd de aplicación web con Python y conexión a base de datos enfocada en la gestión de datos y diseñada bajo el patrón CRUD, lo que permite realizar operaciones de creación, lectura, actualización y borrado de registros de manera eficiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#" target="_blank"><img class="card-img-top" src="img/construccion.png" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#" target="_blank">Project Three</a>
+                                    </h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis molestias nihil voluptatibus voluptates nesciunt dolore, porro nam a soluta delectus esse ea mollitia obcaecati eligendi consequatur pariatur tempora aspernatur dolor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#" target="_blank"><img class="card-img-top" src="img/construccion.png" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#" target="_blank">Project Four</a>
+                                    </h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam
+                                        nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non
+                                        magni, voluptates quae, necessitatibus unde temporibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#" target="_blank"><img class="card-img-top" src="img/construccion.png" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#" target="_blank">Project Five</a>
+                                    </h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
+                                        odio, gravida pellentesque urna varius vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#" target="_blank"><img class="card-img-top" src="img/construccion.png" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#" target="_blank">Project Six</a>
+                                    </h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam
+                                        nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non
+                                        magni, voluptates quae, necessitatibus unde temporibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                
+                    <!-- Pagination -->
+                    <!-- <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </section> 
+        <div class="piquito"></div>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <div class="contacto container-fluid">
+                <!-- <div class="container d-flex flex-column justify-content-center align-items-center"> -->
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <h1>Contacto</h1>
+                        <!-- <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2> -->
+                    </div>
+                    <div class="container-fluid contact-wrapper">
+                        <!-- Formulario de contacto --> 
+                        <div class="formulario-contacto container col-md-6">
+                            <form id="contact-form" class="form-horizontal" role="form" onsubmit="return validateForm()" action="/enviar_formulario" method="post">
+                                <input type="text" class="form-group form-control" id="name" placeholder="NOMBRE" name="name" required>
+                                <input type="email" class="form-group form-control" id="email" placeholder="EMAIL" name="email" required>
+                                <textarea class="form-group form-control" rows="10" placeholder="MENSAJE" id="message" name="message" required></textarea>
+                                <div class="form-group container">
+                                    <button class="btn send-button btn-large btn-block shadow" id="submit" type="submit" value="SEND">ENVIAR</button>
+                                </div>  
+                            </form>
+                        </div>
+                        <!-- Datos de contacto --> 
+                        <div class="direct-contact-container container col-md-4">
+                            <div class="lista-contacto container mb-2">
+                                <ul class="contact-list mx-auto">
+                                    <li class="list-item mt-2 mb-3"><div class="container px-0 d-flex align-items-center"><i class="fa fa-phone fa-2x"></i><span class="contact-text phone"><a href="tel:+54 9 342 544-8000" title="Give me a call" target="_blank">+54 9 342 544-8000</a></span></div></li>
+                                    <li class="list-item mb-3"><div class="container px-0 d-flex align-items-center"><i class="fa fa-envelope fa-2x"></i><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">danisa.achkar@gmail.com</a></span></div></li>
+                                    <li class="list-item mb-3"><div class="container px-0 d-flex align-items-center"><i class="fa fa-map-marker fa-2x"></i><span class="contact-text place">Santa Fe, Argentina</span></div></li>
+                                </ul>
+                            </div>
+                            <div class="container-fluid p-0">
+                                <iframe class="mapa shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108717.9119000221!2d-60.74498844103111!3d-31.621945011952505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1705167822337!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Boton hacia Arriba y WA -->
+    <button id="btnArriba" class="botonArriba btn"><i class="bi bi-chevron-up text-white fa-lg"></i></button>  
+    <a href="https://api.whatsapp.com/send?phone=+54 9 342 544-8000&text=Hola,%20estoy%20interesado%20en%20tu%20producto/servicio" target="_blank" class="whatsapp-btn"><img src="img/wa.png" alt="WhatsApp"></a>
+
+    <!-- Footer -->
+    <footer id="idfooter"> </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- JS script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+   
+
+</body>
+
+</html>

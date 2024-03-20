@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Solutions</title>
+    <link rel="stylesheet" href="static/css/estilos2.css">
+    <script src="https://kit.fontawesome.com/51a3879bcb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="static/img/logo.png" sizes="64x64">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header id="idheader"> </header>
+
+    <main id="altas">
+        <div class="alta1">
+            <h1>Suscribite a nuestro newsletter!!</h1>
+            <h3>Boletín semanal de SOSTENIBILIDAD </h3>
+            <p>Recibe las últimas noticias y contenido destacado sobre prácticas ecoamigables, iniciativas sustentables y consejos para un estilo de vida más consciente, directamente en tu bandeja de entrada.</p>
+            <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
+        </div>
+        <div class="alta2">
+            <form id="formulario" enctype="multipart/form-data">
+                <label for="dni">DNI:</label><input type="text" id="dni" name="dni" required><br>
+                <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required><br>
+                <label for="apellido">Apellido:</label><input type="text" id="apellido" name="apellido" required><br>
+                <label for="mail">Mail:</label><input type="text" id="mail" name="mail" required><br>
+                <label for="imagenSuscriptor">Imagen del suscriptor:</label><input type="file" id="imagenSuscriptor" name="imagen">
+                <label for="telefonoSuscriptor">Telefono:</label><input type="text" id="telefonoSuscriptor" name="telefonoSuscriptor">
+                <button type="submit">Agregar Suscriptor</button>
+                <!-- <a href="index.html">Menu principal</a> -->
+            </form>
+        </div>
+    </main>
+    
+    <footer id="idfooter"> </footer>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/altas.js"></script>
+</body>
+</html>
