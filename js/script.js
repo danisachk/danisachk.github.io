@@ -297,3 +297,43 @@ $(document).ready(function () {
       $(".navbar-collapse").collapse("hide");
     });
 });
+
+
+// Obtener el botón
+var btn = document.querySelector('.enviar-btn');
+
+// Agregar evento para mostrar tooltip al pasar el cursor sobre el botón
+btn.addEventListener('mouseover', function() {
+    // Crear elemento para el tooltip
+    // var tooltip = document.createElement('div');
+    tooltip.textContent = "Formulario aún no habilitado para mensajes en línea";
+    tooltip.classList.add('tooltip');
+
+    // Posicionar el tooltip
+    var rect = btn.getBoundingClientRect();
+    tooltip.style.top = rect.top - 40 + 'px'; // Ajustar la posición según sea necesario
+    tooltip.style.left = rect.left + 'px';
+
+    // Agregar tooltip al DOM
+    document.body.appendChild(tooltip);
+});
+
+
+// Obtener el botón
+var btni = document.querySelector('.send-btn');
+
+// Agregar evento para mostrar tooltip al pasar el cursor sobre el botón
+btni.addEventListener('mouseover', function() {
+    // Crear elemento para el tooltip
+    // var tooltip = document.createElement('div');
+    tooltip.textContent = "Form not yet enabled for online messaging";
+    tooltip.classList.add('tooltip');
+
+    // Posicionar el tooltip
+    var rect = btni.getBoundingClientRect();
+    tooltip.style.top = rect.top - 40 + 'px'; // Ajustar la posición según sea necesario
+    tooltip.style.left = rect.left + 'px';
+
+    // Agregar tooltip al DOM
+    document.body.appendChild(tooltip);
+});

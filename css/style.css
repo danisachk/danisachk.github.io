@@ -1150,3 +1150,43 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
+
+/* .enviar-btn:hover::before {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    margin-top: -30px;
+    margin-left: -10px; 
+  } */
+
+  .enviar-btn, .send-btn {
+    position: relative; /* Añadir posición relativa para el posicionamiento absoluto del tooltip */
+  }
+  
+  .enviar-btn::after, .send-btn::after {
+    content: attr(aria-label);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    top: -30px; /* Ajustar según necesites para la posición */
+    left: 50%; /* Centrar el tooltip horizontalmente */
+    transform: translateX(-50%); /* Centrar el tooltip horizontalmente */
+    opacity: 0; /* Inicialmente, el tooltip no es visible */
+    transition: opacity 0.3s ease; /* Agregar una transición para suavizar la aparición */
+  }
+  
+  .enviar-btn:hover::after, .send-btn:hover::after {
+    opacity: 1; /* Hacer el tooltip visible al pasar el cursor sobre el botón */
+  }
