@@ -99,14 +99,14 @@ let footer =`
         <li><a href="https://www.linkedin.com/in/danisa-achkar/" target="_blank" class="contact-icon">
         <i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
+        <!-- 
         <li><a href="https://github.com/danisachk" target="_blank" class="contact-icon">
         <i class="fa fa-github" aria-hidden="true"></i></a>
         </li>
-        <!-- 
-        <li><a href="#" target="_blank" class="contact-icon">
+        -->
+        <li><a href="https://api.whatsapp.com/send?phone=+54 9 342 544-8000&text=Hola,%20estoy%20interesado%20en%20tu%20producto/servicio" target="_blank" class="contact-icon">
         <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </li>
-        -->
         <li><a href="https://www.instagram.com/danisa_achkar/" target="_blank" class="contact-icon">
         <i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
