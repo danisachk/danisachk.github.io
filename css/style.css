@@ -368,7 +368,7 @@ ul.timeline-list .items:before {
     z-index: 1;
 }
 .timeline_content span {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     font-family: poppins;
     color: var(--rojo);
@@ -408,10 +408,14 @@ ul.timeline-list .items:before {
     width: 40px;
     padding-bottom: 15px;
 }
-#diveria {
-    width: 20px;
+#jha, #scale {
+    width: 30px;
     padding-bottom: 5px;
 }
+.timeline_content ul {
+    margin-bottom: 10px;
+}
+
 .referencia {
     text-decoration: underline;
     color: var(--gris-oscuro) !important;
@@ -868,6 +872,9 @@ footer {
     .timeline_content {
         width: 80% !important;
     }
+    .timeline_content h4 {
+        padding-left: 16px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .exper2 {
@@ -1150,43 +1157,3 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
-
-/* .enviar-btn:hover::before {
-    content: attr(title);
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 1;
-    margin-top: -30px;
-    margin-left: -10px; 
-  } */
-
-  .enviar-btn, .send-btn {
-    position: relative; /* Añadir posición relativa para el posicionamiento absoluto del tooltip */
-  }
-  
-  .enviar-btn::after, .send-btn::after {
-    content: attr(aria-label);
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 1;
-    top: -30px; /* Ajustar según necesites para la posición */
-    left: 50%; /* Centrar el tooltip horizontalmente */
-    transform: translateX(-50%); /* Centrar el tooltip horizontalmente */
-    opacity: 0; /* Inicialmente, el tooltip no es visible */
-    transition: opacity 0.3s ease; /* Agregar una transición para suavizar la aparición */
-  }
-  
-  .enviar-btn:hover::after, .send-btn:hover::after {
-    opacity: 1; /* Hacer el tooltip visible al pasar el cursor sobre el botón */
-  }

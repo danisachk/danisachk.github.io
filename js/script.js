@@ -99,14 +99,14 @@ let footer =`
         <li><a href="https://www.linkedin.com/in/danisa-achkar/" target="_blank" class="contact-icon">
         <i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
-        <!-- 
         <li><a href="https://github.com/danisachk" target="_blank" class="contact-icon">
         <i class="fa fa-github" aria-hidden="true"></i></a>
         </li>
-        -->
-        <li><a href="https://api.whatsapp.com/send?phone=+54 9 342 544-8000&text=Hola,%20estoy%20interesado%20en%20tu%20producto/servicio" target="_blank" class="contact-icon">
+        <!-- 
+        <li><a href="#" target="_blank" class="contact-icon">
         <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </li>
+        -->
         <li><a href="https://www.instagram.com/danisa_achkar/" target="_blank" class="contact-icon">
         <i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
@@ -296,44 +296,4 @@ $(document).ready(function () {
     $(".navbar-nav .nav-link").on("click", function () {
       $(".navbar-collapse").collapse("hide");
     });
-});
-
-
-// Obtener el botón
-var btn = document.querySelector('.enviar-btn');
-
-// Agregar evento para mostrar tooltip al pasar el cursor sobre el botón
-btn.addEventListener('mouseover', function() {
-    // Crear elemento para el tooltip
-    // var tooltip = document.createElement('div');
-    tooltip.textContent = "Formulario aún no habilitado para mensajes en línea";
-    tooltip.classList.add('tooltip');
-
-    // Posicionar el tooltip
-    var rect = btn.getBoundingClientRect();
-    tooltip.style.top = rect.top - 40 + 'px'; // Ajustar la posición según sea necesario
-    tooltip.style.left = rect.left + 'px';
-
-    // Agregar tooltip al DOM
-    document.body.appendChild(tooltip);
-});
-
-
-// Obtener el botón
-var btni = document.querySelector('.send-btn');
-
-// Agregar evento para mostrar tooltip al pasar el cursor sobre el botón
-btni.addEventListener('mouseover', function() {
-    // Crear elemento para el tooltip
-    // var tooltip = document.createElement('div');
-    tooltip.textContent = "Form not yet enabled for online messaging";
-    tooltip.classList.add('tooltip');
-
-    // Posicionar el tooltip
-    var rect = btni.getBoundingClientRect();
-    tooltip.style.top = rect.top - 40 + 'px'; // Ajustar la posición según sea necesario
-    tooltip.style.left = rect.left + 'px';
-
-    // Agregar tooltip al DOM
-    document.body.appendChild(tooltip);
 });
